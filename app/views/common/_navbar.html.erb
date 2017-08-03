@@ -17,7 +17,7 @@
         <li class="active"><a href="/">首頁 <span class="sr-only">(current)</span></a></li>
         <li><a href="/news">最新消息</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">客房介紹 <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-hover="dropdown" data-animations="fadeIn" role="button" aria-haspopup="true" aria-expanded="false">客房介紹 <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li class="menu-title"><a  href="#">景觀莊園</a></li>
             <li><a href="#">201月下</a></li>
@@ -36,21 +36,19 @@
         <li><a href="#">訂購手作特產</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li>
-          <%= link_to "登入", '#' %>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
         <li><a href="#">相簿</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">關於我們 <span class="caret"></span></a>
+          <a href="/about_us" class="dropdown-toggle" data-hover="dropdown" data-animations="fadeIn" role="button" aria-haspopup="true" aria-expanded="false">關於我們 <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">民宿緣起</a></li>
-            <li><a href="#">民宿主人</a></li>
+            <li><a href="/about_us#topic1">民宿緣起</a></li>
+            <li><a href="/about_us#topic2">民宿主人</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">地理位置</a></li>
-            <li><a href="#">交通資訊</a></li>
+            <li><a href="/about_us#topic3">地理位置</a></li>
+            <li><a href="/about_us#topic4">交通資訊</a></li>
           </ul>
+        </li>
+        <li>
+          <li><a href="#">登入</a></li>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   get '/notice' => 'home#notice'
 
+  get '/about_us' => 'home#about_us'
+
 end
