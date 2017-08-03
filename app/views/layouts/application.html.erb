@@ -11,6 +11,9 @@
   <body>
     <div class="container-fluid">
       <%= render "common/navbar" %>
+      <% if @title %>
+        <%= render "common/landing-view" %>
+      <% end %>
       <%= render "common/flashes" %>
       <%= yield %>
     <%= render "common/footer" %>

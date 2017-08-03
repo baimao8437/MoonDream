@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on('turbolinks:load',function(){
 	/**
 	 * Swiper 3.4.0
 	 * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -31,10 +31,6 @@ $(document).ready(function(){
 	    autoplayDisableOnInteraction: false
 	});
 
-
-
-
-
 	var foodswiper = new Swiper('#foodpic', {
 	    pagination: '.swiper-pagination',
 	    slidesPerView: 3,
@@ -42,6 +38,18 @@ $(document).ready(function(){
 	    spaceBetween: 30,
 	    freeMode: true
 	});
-
 	console.log("swiper set");
+
+	$('#sidebar').affix({
+	    offset: {
+	        top: 430,
+	    }
+	})
+
+	$('body').scrollspy({
+	    target: '.bs-docs-sidebar',
+	    offset: 200
+	});
+
 });
+

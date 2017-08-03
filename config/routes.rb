@@ -4,4 +4,7 @@ Rails.application.routes.draw do
 
   get '/news' => 'news#index'
 
+
+  get '/notice' => 'home#notice'
+
 end
